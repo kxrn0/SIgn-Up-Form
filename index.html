@@ -5,14 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <title>Sign Up</title>
-    <!-- 
-        woman.png : <a href="https://www.flaticon.com/free-icons/woman" title="woman icons">Woman icons created by Freepik - Flaticon</a>
-        grape nuts font : https://fonts.google.com/specimen/Grape+Nuts#about
-     -->
 </head>
 <body>
-    
+     <main>
+         <section class="bg-image">
+             <div class="logo">
+                 <img src="images/woman.png" alt="background-image">
+                 <h1>Hermes</h1>
+             </div>
+             <div class="credits">
+                 <p>Background by <a href="https://unsplash.com/photos/3ocuHjb8k2A">Yohann LIBOT</a> on <a href="https://unsplash.com">Unsplash</a></p>
+                 <p>Logo by Freepik on <a href="https://www.flaticon.com/free-icons/woman">Flaticon</a></p>
+             </div>
+         </section>
+         <section class="main-content">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non nulla itaque libero quam quaerat suscipit, inventore ex modi rem ipsa?</h3>
+            <h3>Lorem <i>ipsum</i> dolor sit amet consectetur</h3>
+            <form action="#" class="form">
+                <div class="card">
+                    <h3>Lorem ipsum dolor sit!</h3>
+                    <div class="card-inputs">
+                        <div class="inputs">
+                            <div class="input"><label for="user-name">First Name</label><input type="text" id="user-name"></div>
+                            <div class="input"><label for="user-email">Email</label><input type="email" id="email"></div>
+                            <div class="input"><label for="user-password">Password</label><input type="password" id="user-password"><span class="error-span">*passwords do not match</span></div>
+                        </div>
+                        <div class="inputs">
+                            <div class="input"><label for="user-last-name">Last Name</label><input type="text" id="user-last-name"></div>
+                            <div class="input"><label for="user-phone">Phone Number</label><input type="tel" id="user-phone"></div>
+                            <div class="input"><label for="confirm-password">Confirm Password</label><input type="password" id="confirm-password"></div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">Create Account</button>
+            </form>
+            <p class="log-in-text">Already have an account? <a href="google.com">Log In</a></p>
+         </section>
+     </main>
 </body>
 </html>

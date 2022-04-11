@@ -1,0 +1,200 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+@font-face {
+    font-family: 'grace';
+    src: url('fonts/grapenuts-regular-webfont.woff2') format('woff2'),
+         url('fonts/grapenuts-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    font-family: Helvetica;
+}
+
+/* BACKGROUND */
+
+.bg-image {
+    background-image: url("images/background_01.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    position: relative;
+}
+
+.logo {
+    margin: 30% auto;
+    background: rgba(218, 56, 56, 0.5);
+    color: rgb(245, 224, 243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: grace;
+    font-size: 3rem;
+}
+
+.logo img {
+    width: 100px;
+    filter: invert(82%) sepia(16%) saturate(310%) hue-rotate(282deg) brightness(107%) contrast(101%);;
+}
+
+.credits {
+    position: absolute;
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgb(238, 247, 247);
+}
+
+.credits a {
+    color: rgb(247, 211, 236);
+}
+
+/* CONTENT */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    background: rgb(237, 227, 236);
+}
+
+.main-content h3 {
+    font-size: 1.5rem;
+    width: 80%;
+    margin-left: 50px;
+}
+
+.main-content i {
+    font-style: italic;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+.form h3 {
+    margin-left: 0;
+}
+
+.form .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    background: rgb(239, 244, 244);
+    box-shadow: 0 3px 10px 3px rgb(220, 210, 210);
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.form .card-inputs {
+    display: flex;
+    gap: 60px;
+}
+
+.form .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form .input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: lue;
+}
+
+.input .error-span {
+    position: absolute;
+    bottom: -1.15rem;
+    left: 0;
+    font-size: .9rem;
+    color: red;
+    display: none;
+}
+
+.form label {
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: .8rem;
+}
+
+.form input {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid rgb(216, 207, 207);
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.form input:focus {
+    outline: 1px solid rgb(127, 127, 228);
+    box-shadow: 0 1px 2px 1px rgb(115, 115, 138);
+}
+
+.main-content .log-in-text {
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.main-content .log-in-text a {
+    text-decoration: none;
+    color: rgb(220, 97, 160);
+}
+
+.submit-button {
+    margin-left: 50px;
+    padding: 10px 30px;
+    border-radius: 7px;
+    border: 3px solid rgb(220, 97, 160);
+    background: rgb(220, 97, 160);
+    color: azure;
+    font-size: 1.15rem;
+    transition: background-color .5s, color .5s;
+}
+
+.submit-button:hover {
+    background: azure;
+    color : rgb(220, 97, 160);
+}
+
+.submit-button:active {
+    transform: scale(.99);
+}
+
+.error {
+    outline: 2px solid rgb(238, 102, 102);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+    }
+
+    .bg-image {
+        width: 100%;
+    }
+}
